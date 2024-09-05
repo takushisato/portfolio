@@ -10,10 +10,11 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Header />
-      {/* ページごとのコンテンツ */}
-      <main>{children}</main>
+      <div className="container">
+        <main>{children}</main>
+      </div>
       <Footer />
     </div>
   );

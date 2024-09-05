@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./parts/Header";
-import "../index.css";
+import "../assets/main.css";
 
 interface LayoutProps {
   children: React.ReactNode; // childrenの型を定義

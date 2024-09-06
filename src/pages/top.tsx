@@ -5,7 +5,7 @@ import SkillComponent from "../components/skill/SkillComponent";
 import SiteHistoryComponent from "../components/site-history/SiteHistoryComponent";
 import PersonalDevComponent from "../components/personal-dev/PersonalDevComponent";
 
-function IndexPage() {
+function TopPage() {
   return (
     <Layout>
       <ProfileComponent />
@@ -17,4 +17,4 @@ function IndexPage() {
   );
 }
 
-export default IndexPage;
+export default TopPage;

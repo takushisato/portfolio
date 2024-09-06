@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import IndexPage from "./pages/index";
+import TopPage from "./pages/top";
 
 function App() {
   return (
     <Router basename="/portfolio/">
       <Routes>
-        <Route path="/" element={<IndexPage />} />
+        <Route path="/" element={<TopPage />} />
       </Routes>
     </Router>
   );

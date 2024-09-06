@@ -3,7 +3,7 @@ import IndexPage from "./pages/index";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio/">
       <Routes>
         <Route path="/" element={<IndexPage />} />
       </Routes>

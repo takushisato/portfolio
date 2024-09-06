@@ -2,7 +2,7 @@ import myImage from "../../assets/image/profile.jpeg";
 
 function ProfileComponent() {
   return (
-    <div>
+    <div className="my-4">
       <h2>自己紹介</h2>
       <img
         src={myImage}

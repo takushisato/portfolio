@@ -1,4 +1,5 @@
 import Layout from "../layout/Layout";
+import TitleComponent from "../components/title/TitleComponent";
 import MyHistoryComponent from "../components/my-history/MyHistoryComponent";
 import ProfileComponent from "../components/profile/ProfileComponent";
 import SkillComponent from "../components/skill/SkillComponent";
@@ -8,6 +9,7 @@ import PersonalDevComponent from "../components/personal-dev/PersonalDevComponen
 function TopPage() {
   return (
     <Layout>
+      <TitleComponent />
       <ProfileComponent />
       <MyHistoryComponent />
       <SkillComponent />

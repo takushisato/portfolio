@@ -1,24 +1,16 @@
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <div className="mx-4"></div>
-          <a className="navbar-brand" href="/">
-            Home
-          </a>
-          <a className="navbar-brand" href="/">
-            GitHub
-          </a>
-          <a className="navbar-brand" href="/">
-            Twitter
-          </a>
-          <a className="navbar-brand" href="/">
-            FaceBook
-          </a>
+      <nav className="navbar bg-body-tertiary">
+        <div className="container-fluid navbar-width">
+          <div className="mx-4">
+            <a className="navbar-brand navbar-button" href="/">
+              Home
+            </a>
+          </div>
           <div className="mx-4"></div>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler navbar-button"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"

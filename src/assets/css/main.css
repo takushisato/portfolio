@@ -1,1 +1,8 @@
 /* 全体適用のCSS */
+
+/* スクリーンサイズが992px未満（lg以下）の場合、aタグを非表示にする */
+@media (max-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+}

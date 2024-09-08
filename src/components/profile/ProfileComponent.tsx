@@ -2,13 +2,9 @@ import myImage from "../../assets/image/profile.jpeg";
 
 function ProfileComponent() {
   return (
-    <div className="my-4">
+    <div className="">
       <h2>自己紹介</h2>
-      <img
-        src={myImage}
-        alt="My Image"
-        className="img-thumbnail img-fluid w-25"
-      />
+      <img src={myImage} alt="My Image" className="" />
       <p>
         takushisatoと申します。 宮城県北部在住です。
         普段は個人でWeb系のお仕事を請け負っています。

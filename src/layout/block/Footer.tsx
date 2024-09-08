@@ -1,22 +1,22 @@
 const Footer = () => {
   return (
-    <footer className="w-100 text-bg-info">
-      <nav className="navbar">
-        <div className="container-fluid">
-          <div className="mx-4"></div>
-          <a className="navbar-brand" href="/">
+    <footer className="">
+      <nav className="">
+        <div className="">
+          <div className=""></div>
+          <a className="" href="/">
             GitHub
           </a>
-          <a className="navbar-brand" href="/">
+          <a className="" href="/">
             Twitter
           </a>
-          <a className="navbar-brand" href="/">
+          <a className="" href="/">
             FaceBook
           </a>
-          <div className="mx-4"></div>
+          <div className=""></div>
         </div>
       </nav>
-      <p className="text-center m-0">© 2024 takushisato portfolio</p>
+      <p className="">© 2024 takushisato portfolio</p>
     </footer>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./block/Header";
 import Footer from "./block/Footer";
 import "../assets/css/main.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 interface LayoutProps {
   children: React.ReactNode; // childrenの型を定義
@@ -10,9 +9,9 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div className="container-fluid p-0">
+    <div className="">
       <Header />
-      <div className="container">
+      <div className="">
         <main>{children}</main>
       </div>
       <Footer />

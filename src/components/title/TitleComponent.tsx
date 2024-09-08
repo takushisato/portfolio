@@ -1,6 +1,6 @@
 function TitleComponent() {
   return (
-    <div className="mt-4">
+    <div className="">
       <h2>ようこそ！</h2>
       <p>Takushi Satoのポートフォリオへ！</p>
     </div>

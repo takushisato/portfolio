@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TopPage from "./pages/top";
+import "../src/index.css";
 
 function App() {
   return (

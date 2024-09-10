@@ -5,7 +5,7 @@ const Header = () => {
         <div className="max-w-screen-xl m-auto container">
           <div className="flex-1">
             <a href="/" className="btn btn-ghost normal-case text-xl">
-              port folio
+              TOP
             </a>
           </div>
           <div className="flex-none">

@@ -47,7 +47,7 @@ function MyHistoryCOmponent() {
     },
   ];
   return (
-    <div className="my-16 max-w-screen-md mx-auto">
+    <div className="my-16 mx-auto">
       <h2 className="text-2xl text-center">経歴</h2>
       <div className="overflow-x-auto">
         <table className="table table-zebra">

@@ -1,7 +1,7 @@
 function SkillComponent() {
   return (
-    <div>
-      <h2 className="text-2xl">スキル</h2>
+    <div className="my-16">
+      <h2 className="text-2xl text-center">スキル</h2>
       <ul>
         <li>HTML、CSS</li>
         <li>CSS Framework（Tailwind）</li>

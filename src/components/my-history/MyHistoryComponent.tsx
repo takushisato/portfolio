@@ -8,7 +8,7 @@ function MyHistoryCOmponent() {
     {
       id: 2,
       date: "2001年4月",
-      content: "トステム株式会社（現在のリクシル株式会社） 入社",
+      content: "トステム株式会社（現在の株式会社LIXIL） 入社",
     },
     {
       id: 3,

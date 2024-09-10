@@ -12,7 +12,7 @@ function SkillComponent() {
         <li className="my-2">
           UI Framework（Bootstrap4、Bootstrap5、daisy.UI、Vuetify3）
         </li>
-        <li className="my-2">JavaScript（jQuery、Vue.js、Nuxt.js、React）</li>
+        <li className="my-2">JavaScript（jQuery、Vue.js、Nuxt.js）</li>
         <li className="my-2">TypeScript</li>
         <li className="my-2">Docker</li>
         <li className="my-2">Git</li>

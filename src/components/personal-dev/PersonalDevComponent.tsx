@@ -6,8 +6,8 @@ function PersonalDevComponent() {
       skill: "React、daisy.UI 他",
       description:
         "当ポートフォリオです。Reactを使用して作成しました。また、daisy.UIというUIフレームワークを使用してデザインを整えました。",
-      URL: "",
-      github: "https://takushisato.github.io/portfolio/",
+      URL: "https://takushisato.github.io/portfolio/",
+      github: "https://github.com/takushisato/portfolio",
     },
     {
       id: 2,
@@ -37,12 +37,14 @@ function PersonalDevComponent() {
       github: "https://github.com/takushisato/futakobusan",
     },
   ];
+
   return (
     <div className="text-center my-16 max-w-screen-xl mx-auto">
       <h2 className="text-2xl">個人開発</h2>
       <p>個人開発の一例です</p>
+      <p>サーバで公開しているものは「公開URL」をクリックで閲覧できます</p>
 
-      <div className="flex flex-wrap justify-center  text-left">
+      <div className="flex flex-wrap justify-center text-left">
         {personalDevList.map((item) => (
           <div
             key={item.id}
@@ -64,14 +66,12 @@ function PersonalDevComponent() {
             <p>{item.skill}</p>
             <p className="font-bold">詳細</p>
             <p>{item.description}</p>
-            <a
-              href={item.URL}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:opacity-50"
-            >
-              {item.URL}
-            </a>
+            <br />
+            {item.URL && (
+              <a href={item.URL} target="_blank" rel="noreferrer">
+                <button className="btn btn-secondary">公開URL</button>
+              </a>
+            )}
           </div>
         ))}
       </div>

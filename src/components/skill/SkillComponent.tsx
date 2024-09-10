@@ -2,19 +2,23 @@ function SkillComponent() {
   return (
     <div className="my-16">
       <h2 className="text-2xl text-center">スキル</h2>
+      <p className="text-center">言語、フレームワーク、ツール等</p>
+      <p className="text-center">経験のあるものを記載しております</p>
       <ul>
-        <li>HTML、CSS</li>
-        <li>CSS Framework（Tailwind）</li>
-        <li>Python（Django、Anaconda）</li>
-        <li>PHP（Laravel、WordPress）</li>
-        <li>UI Framework（Bootstrap4、Bootstrap5、daisy.UI、Vuetify3）</li>
-        <li>JavaScript（jQuery、Vue.js、Nuxt.js、React）</li>
-        <li>TypeScript</li>
-        <li>Docker</li>
-        <li>Git</li>
-        <li>Linux（Ubuntu）</li>
-        <li>SQL（MySQL、SQLite3）</li>
-        <li>AWS、Netlify、Render</li>
+        <li className="my-2">HTML、CSS</li>
+        <li className="my-2">CSS Framework（Tailwind）</li>
+        <li className="my-2">Python（Django、Anaconda）</li>
+        <li className="my-2">PHP（Laravel、WordPress）</li>
+        <li className="my-2">
+          UI Framework（Bootstrap4、Bootstrap5、daisy.UI、Vuetify3）
+        </li>
+        <li className="my-2">JavaScript（jQuery、Vue.js、Nuxt.js、React）</li>
+        <li className="my-2">TypeScript</li>
+        <li className="my-2">Docker</li>
+        <li className="my-2">Git</li>
+        <li className="my-2">Linux（Ubuntu）</li>
+        <li className="my-2">SQL（MySQL、SQLite3）</li>
+        <li className="my-2">AWS、Netlify、Render</li>
       </ul>
     </div>
   );

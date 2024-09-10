@@ -4,3 +4,9 @@ h2 {
   -webkit-text-stroke: 1px #414040;
   text-shadow: 0px 4px 4px #282828;
 }
+
+h3 {
+  color: #7e7b7b;
+  -webkit-text-stroke: 1px #414040;
+  text-shadow: 0px 4px 4px #282828;
+}

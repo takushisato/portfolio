@@ -11,7 +11,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <div className="">
       <Header />
-      <div className="">
+      <div className="max-w-screen-xl mx-auto">
         <main>{children}</main>
       </div>
       <Footer />

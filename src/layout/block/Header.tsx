@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <div className="navbar bg-gray-200 border-b-2 border-gray-300">
+      <div className="navbar bg-gray-100 border-b-2 border-gray-200">
         <div className="max-w-screen-xl m-auto container">
           <div className="flex-1">
             <a href="/" className="btn btn-ghost normal-case text-xl">
@@ -27,7 +27,7 @@ const Header = () => {
                   </svg>
                 </button>
               </label>
-              <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52">
+              <ul className="dropdown-content z-[1] menu p-2 shadow bg-gray-300 rounded-box w-52">
                 <li className="font-bold my-2">
                   <a href="/">自己紹介</a>
                 </li>

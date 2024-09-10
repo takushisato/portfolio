@@ -44,7 +44,7 @@ function MyHistoryCOmponent() {
   ];
   return (
     <div>
-      <h2>経歴</h2>
+      <h2 className="text-2xl">経歴</h2>
       <p>私の経歴です</p>
       <ul>
         {myHistory.map((history, index) => (

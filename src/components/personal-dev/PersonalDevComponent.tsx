@@ -38,17 +38,17 @@ function PersonalDevComponent() {
     },
   ];
   return (
-    <div className="text-center my-16">
+    <div className="text-center my-16 max-w-screen-xl mx-auto">
       <h2 className="text-2xl">個人開発</h2>
       <p>個人開発の一例です</p>
-      <div className="flex text-left ">
+
+      <div className="flex flex-wrap justify-center  text-left">
         {personalDevList.map((item) => (
           <div
             key={item.id}
-            className="max-w-60 mx-auto bg-slate-300 p-2 rounded-md"
+            className="w-full md:w-1/3 lg:w-1/5 bg-slate-300 p-4 rounded-md m-4"
           >
             <h3>{item.title}</h3>
-            <br />
             <p className="font-bold">リポジトリ</p>
             <p>
               <a
@@ -60,13 +60,10 @@ function PersonalDevComponent() {
                 GitHub
               </a>
             </p>
-            <br />
             <p className="font-bold">使用技術</p>
             <p>{item.skill}</p>
-            <br />
             <p className="font-bold">詳細</p>
             <p>{item.description}</p>
-            <br />
             <a
               href={item.URL}
               target="_blank"

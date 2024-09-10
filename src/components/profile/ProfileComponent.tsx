@@ -2,7 +2,7 @@ import myImage from "../../assets/image/profile.jpeg";
 
 function ProfileComponent() {
   return (
-    <div className="my-16 text-center">
+    <div className="my-16 text-center max-w-screen-md mx-auto">
       <h2 className="text-2xl">自己紹介</h2>
       <div className="avatar my-4">
         <div className="w-32 rounded-full">

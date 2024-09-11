@@ -65,7 +65,11 @@ function MyHistoryCOmponent() {
           </thead>
           <tbody>
             {myHistory.map((history) => (
-              <tr onClick={() => handleRowClick(history.id)}>
+              <tr
+                key={history.id}
+                onClick={() => handleRowClick(history.id)}
+                className="hover:opacity-50"
+              >
                 <td>{history.date}</td>
                 <td>{history.content}</td>
               </tr>

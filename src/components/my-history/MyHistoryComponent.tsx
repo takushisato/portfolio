@@ -46,6 +46,12 @@ function MyHistoryCOmponent() {
       content: "IT系のフリーランスとして独立",
     },
   ];
+
+  // 行をクリックしたときにIDをログに出力する関数
+  const handleRowClick = (id: number) => {
+    console.log("Clicked ID:", id);
+  };
+
   return (
     <div className="my-16 mx-auto max-w-screen-md">
       <h2 className="text-2xl text-center">経歴</h2>
@@ -58,8 +64,8 @@ function MyHistoryCOmponent() {
             </tr>
           </thead>
           <tbody>
-            {myHistory.map((history, index) => (
-              <tr key={index}>
+            {myHistory.map((history) => (
+              <tr onClick={() => handleRowClick(history.id)}>
                 <td>{history.date}</td>
                 <td>{history.content}</td>
               </tr>

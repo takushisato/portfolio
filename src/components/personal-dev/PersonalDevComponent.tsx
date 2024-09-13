@@ -1,3 +1,4 @@
+import { useState } from "react";
 function PersonalDevComponent() {
   const personalDevList = [
     {
@@ -38,6 +39,19 @@ function PersonalDevComponent() {
     },
   ];
 
+  // historyIDをuseStateで管理
+  const [workExperienceID, setWorkExperienceID] = useState<number | null>(null);
+
+  // 行をクリックしたときにモーダルを表示
+  const handleRowClick = (id: number) => {
+    const modal = document.getElementById("my_modal_3");
+    if (modal instanceof HTMLDialogElement) {
+      modal.showModal();
+      setWorkExperienceID(id);
+      console.log("id", id);
+    }
+  };
+
   return (
     <div className="text-center my-16 max-w-screen-xl mx-auto">
       <h2 className="text-2xl">個人開発</h2>
@@ -48,7 +62,8 @@ function PersonalDevComponent() {
         {personalDevList.map((item) => (
           <div
             key={item.id}
-            className="w-full md:w-1/3 lg:w-1/5 bg-slate-300 p-4 rounded-md m-4"
+            className="w-full md:w-1/3 lg:w-1/5 bg-slate-300 p-4 rounded-md m-4 cursor-pointer hover:opacity-50"
+            onClick={() => handleRowClick(item.id)}
           >
             <h3>{item.title}</h3>
             <p className="font-bold">リポジトリ</p>
@@ -75,6 +90,21 @@ function PersonalDevComponent() {
           </div>
         ))}
       </div>
+      <dialog id="my_modal_3" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">詳細情報</h3>
+          {workExperienceID !== null && (
+            <p className="py-4">
+              {personalDevList[workExperienceID - 1].description}
+            </p>
+          )}
+          <div className="modal-action">
+            <form method="dialog">
+              <button className="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 }

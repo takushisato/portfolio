@@ -16,16 +16,17 @@ function ProfileComponent() {
           <img
             src={myImage}
             alt="My Image"
-            className="absolute w-full h-full rounded-full transition-opacity duration-300 group-hover:opacity-0"
+            className="absolute w-full h-full rounded-full transition-opacity duration-1000 group-hover:opacity-0"
           />
           {/* ホバー時に表示する隠し画像 */}
           <img
             src={hiddenImage}
             alt="Hidden Image"
-            className="absolute w-full h-full rounded-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            className="absolute w-full h-full rounded-full transition-opacity duration-1000 opacity-0 group-hover:opacity-100"
           />
         </div>
       </div>
+
       <p>宮城県北部在住の「たくちゃん」と申します。</p>
       <p>普段は個人でWeb系のお仕事を請け負っています。</p>
       <p> 主にPython（Django）、VueやNuxtが多いです。</p>

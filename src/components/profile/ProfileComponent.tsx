@@ -1,4 +1,5 @@
 import myImage from "../../assets/image/profile.jpeg";
+import hiddenImage from "../../assets/image/me.png";
 import github from "../../assets/image/github.png";
 import twitter from "../../assets/image/twitter.png";
 import facebook from "../../assets/image/facebook.png";
@@ -7,9 +8,22 @@ function ProfileComponent() {
   return (
     <div className="my-16 text-center max-w-screen-md mx-auto">
       <h2 className="text-2xl">自己紹介</h2>
-      <div className="avatar my-4">
-        <div className="w-32 rounded-full">
-          <img src={myImage} alt="My Image" className="" />
+
+      {/* 画像のホバーギミック */}
+      <div className="avatar my-4 relative">
+        <div className="w-32 rounded-full relative group">
+          {/* 表示するメイン画像 */}
+          <img
+            src={myImage}
+            alt="My Image"
+            className="absolute w-full h-full rounded-full transition-opacity duration-300 group-hover:opacity-0"
+          />
+          {/* ホバー時に表示する隠し画像 */}
+          <img
+            src={hiddenImage}
+            alt="Hidden Image"
+            className="absolute w-full h-full rounded-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+          />
         </div>
       </div>
       <p>宮城県北部在住の「たくちゃん」と申します。</p>

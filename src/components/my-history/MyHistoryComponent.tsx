@@ -1,4 +1,6 @@
-function MyHistoryCOmponent() {
+import { useState } from "react";
+
+function MyHistoryComponent() {
   const myHistory = [
     {
       id: 1,
@@ -47,9 +49,16 @@ function MyHistoryCOmponent() {
     },
   ];
 
-  // 行をクリックしたときにIDをログに出力する関数
+  // historyIDをuseStateで管理
+  const [historyID, setHistoryID] = useState<number | null>(null);
+
+  // 行をクリックしたときにモーダルを表示
   const handleRowClick = (id: number) => {
-    console.log("Clicked ID:", id);
+    const modal = document.getElementById("my_modal_1");
+    if (modal instanceof HTMLDialogElement) {
+      modal.showModal();
+      setHistoryID(id);
+    }
   };
 
   return (
@@ -68,7 +77,7 @@ function MyHistoryCOmponent() {
               <tr
                 key={history.id}
                 onClick={() => handleRowClick(history.id)}
-                className="hover:opacity-50"
+                className="hover:opacity-50 cursor-pointer"
               >
                 <td>{history.date}</td>
                 <td>{history.content}</td>
@@ -77,8 +86,21 @@ function MyHistoryCOmponent() {
           </tbody>
         </table>
       </div>
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">詳細情報</h3>
+          {historyID !== null && (
+            <p className="py-4">{myHistory[historyID - 1].content}</p>
+          )}
+          <div className="modal-action">
+            <form method="dialog">
+              <button className="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 }
 
-export default MyHistoryCOmponent;
+export default MyHistoryComponent;

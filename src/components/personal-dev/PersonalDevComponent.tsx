@@ -62,7 +62,7 @@ function PersonalDevComponent() {
         {personalDevList.map((item) => (
           <div
             key={item.id}
-            className="w-full md:w-1/3 lg:w-1/5 bg-slate-300 p-4 rounded-md m-4 cursor-pointer hover:opacity-50"
+            className="w-full md:w-1/3 lg:w-1/5 bg-slate-300 p-4 rounded-md m-4 cursor-pointer hover:opacity-80"
             onClick={() => handleRowClick(item.id)}
           >
             <h3>{item.title}</h3>

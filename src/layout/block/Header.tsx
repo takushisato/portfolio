@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <div className="navbar bg-gray-100 border-b-2 border-gray-200">
+      <div className="fixed top-0 left-0  navbar bg-gray-100 border-b-2 border-gray-200">
         <div className="max-w-screen-md m-auto container">
           <div className="flex-1">
             <a href="/" className="btn btn-ghost normal-case text-xl">

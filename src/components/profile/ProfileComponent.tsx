@@ -6,7 +6,7 @@ import facebook from "../../assets/image/facebook.png";
 
 function ProfileComponent() {
   return (
-    <div className="my-16 text-center max-w-screen-md mx-auto">
+    <div className="my-16 text-center max-w-screen-md mx-auto" id="profile">
       <h2 className="text-2xl">自己紹介</h2>
 
       {/* 画像のホバーギミック */}

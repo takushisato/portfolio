@@ -49,7 +49,10 @@ function PersonalDevComponent() {
   };
 
   return (
-    <div className="text-center my-16 max-w-screen-xl mx-auto">
+    <div
+      className="text-center my-16 max-w-screen-xl mx-auto"
+      id="workExperience"
+    >
       <h2 className="text-2xl">実務経歴</h2>
       <p>システム開発の実務経歴です</p>
       <p>直近のものを記載しています</p>

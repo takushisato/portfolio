@@ -53,7 +53,7 @@ function PersonalDevComponent() {
   };
 
   return (
-    <div className="text-center my-16 max-w-screen-xl mx-auto">
+    <div className="text-center my-16 max-w-screen-xl mx-auto" id="personalDev">
       <h2 className="text-2xl">個人開発</h2>
       <p>個人開発の一例です</p>
       <p>サーバで公開しているものは「公開URL」をクリックで閲覧できます</p>

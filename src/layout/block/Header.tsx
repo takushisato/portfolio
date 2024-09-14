@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <div className="fixed top-0 left-0  navbar bg-gray-100 border-b-2 border-gray-200">
+      <div className="navbar bg-gray-100 border-b-2 border-gray-200">
         <div className="max-w-screen-md m-auto container">
           <div className="flex-1">
             <a href="/" className="btn btn-ghost normal-case text-xl">
@@ -29,19 +29,22 @@ const Header = () => {
               </label>
               <ul className="dropdown-content z-[1] menu p-2 shadow bg-gray-300 rounded-box w-52">
                 <li className="font-bold my-2">
-                  <a href="/">自己紹介</a>
+                  <a href="#profile">自己紹介</a>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="/">経歴</a>
+                  <a href="#myHistory">経歴</a>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="/">スキル</a>
+                  <a href="#skill">スキル</a>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="/">個人開発</a>
+                  <a href="#workExperience">実務経歴</a>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="/">更新情報</a>
+                  <a href="#personalDev">個人開発</a>
+                </li>
+                <li className="font-bold my-2">
+                  <a href="#siteHistory">更新情報</a>
                 </li>
               </ul>
             </div>

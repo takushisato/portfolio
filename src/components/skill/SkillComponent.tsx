@@ -1,6 +1,6 @@
 function SkillComponent() {
   return (
-    <div className="my-16 max-w-screen-md mx-auto">
+    <div className="my-16 max-w-screen-md mx-auto" id="skill">
       <h2 className="text-2xl text-center">スキル</h2>
       <p className="text-center">言語、フレームワーク、ツール等</p>
       <p className="text-center">経験のあるものを記載しております</p>

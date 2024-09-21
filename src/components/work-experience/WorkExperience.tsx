@@ -44,7 +44,6 @@ function PersonalDevComponent() {
     if (modal instanceof HTMLDialogElement) {
       modal.showModal();
       setWorkExperienceID(id);
-      console.log("id", id);
     }
   };
 

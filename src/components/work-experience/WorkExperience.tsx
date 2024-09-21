@@ -64,12 +64,13 @@ function PersonalDevComponent() {
             onClick={() => handleRowClick(item.id)}
           >
             <h3>{item.title}</h3>
+            <br />
             <p className="font-bold">使用技術</p>
             <p>{item.skill}</p>
-            <p className="font-bold">開発期間</p>
+            <p className="font-bold">就業期間</p>
             <p>{item.timeFrame}</p>
-            <p className="font-bold">詳細</p>
-            <p>{item.description}</p>
+            {/* <p className="font-bold">詳細</p>
+            <p>{item.description}</p> */}
           </div>
         ))}
       </div>

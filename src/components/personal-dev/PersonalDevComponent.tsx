@@ -65,7 +65,8 @@ function PersonalDevComponent() {
             onClick={() => handleRowClick(item.id)}
           >
             <h3>{item.title}</h3>
-            <p className="font-bold">リポジトリ</p>
+            <br />
+            {/* <p className="font-bold">リポジトリ</p>
             <p>
               <a
                 href={item.github}
@@ -75,17 +76,17 @@ function PersonalDevComponent() {
               >
                 GitHub
               </a>
-            </p>
+            </p> */}
             <p className="font-bold">使用技術</p>
             <p>{item.skill}</p>
-            <p className="font-bold">詳細</p>
+            {/* <p className="font-bold">詳細</p>
             <p>{item.description}</p>
             <br />
             {item.URL && (
               <a href={item.URL} target="_blank" rel="noreferrer">
                 <button className="btn btn-secondary">公開URL</button>
               </a>
-            )}
+            )} */}
           </div>
         ))}
       </div>

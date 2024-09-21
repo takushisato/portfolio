@@ -1,54 +1,7 @@
 import { useState } from "react";
+import { myHistoryList } from "../../model/my-history-list";
 
 function MyHistoryComponent() {
-  const myHistory = [
-    {
-      id: 1,
-      date: "1982年8月",
-      content: "岩手県生まれ",
-    },
-    {
-      id: 2,
-      date: "2001年4月",
-      content: "トステム株式会社（現在の株式会社LIXIL） 入社",
-    },
-    {
-      id: 3,
-      date: "2004年1月",
-      content: "トステム株式会社を退社",
-    },
-    {
-      id: 4,
-      date: "2004年2月",
-      content: "中小の金属加工会社に入社",
-    },
-    {
-      id: 5,
-      date: "2019年1月",
-      content: "プログラミング学習開始",
-    },
-    {
-      id: 6,
-      date: "2019年10月",
-      content: "同社を退社。また、個人でも仕事をするため屋号を取得",
-    },
-    {
-      id: 7,
-      date: "2020年2月頃",
-      content: "コロナが世界的に蔓延する中、プログラミングの学習を続ける",
-    },
-    {
-      id: 8,
-      date: "2021年10月頃",
-      content: "IT系の勉強会で知り合ったIT社長の元で修行を始める",
-    },
-    {
-      id: 9,
-      date: "2022年4月",
-      content: "IT系のフリーランスとして独立",
-    },
-  ];
-
   // historyIDをuseStateで管理
   const [historyID, setHistoryID] = useState<number | null>(null);
 
@@ -73,7 +26,7 @@ function MyHistoryComponent() {
             </tr>
           </thead>
           <tbody>
-            {myHistory.map((history) => (
+            {myHistoryList.map((history) => (
               <tr
                 key={history.id}
                 onClick={() => handleRowClick(history.id)}
@@ -90,7 +43,7 @@ function MyHistoryComponent() {
         <div className="modal-box">
           <h3 className="font-bold text-lg">詳細情報</h3>
           {historyID !== null && (
-            <p className="py-4">{myHistory[historyID - 1].content}</p>
+            <p className="py-4">{myHistoryList[historyID - 1].content}</p>
           )}
           <div className="modal-action">
             <form method="dialog">

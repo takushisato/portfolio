@@ -1,45 +1,7 @@
 import { useState } from "react";
+import { personalDevList } from "../../model/personal-dev-list";
 
 function PersonalDevComponent() {
-  const personalDevList = [
-    {
-      id: 1,
-      title: "ポートフォリオ",
-      skill: "React、daisy.UI 他",
-      description:
-        "当ポートフォリオです。\n\n Reactを使用して作成しました。\n\n また、daisy.UIというUIフレームワークを使用してデザインを整えました。",
-      URL: "https://takushisato.github.io/portfolio/",
-      github: "https://github.com/takushisato/portfolio",
-    },
-    {
-      id: 2,
-      title: "AIを使用した釣りアプリ",
-      skill: "Django、Nuxt3、Vuetify3 他",
-      description:
-        "openAIのAPIを用いた釣りアプリを個人開発中です。\n\n 2024年8月現在まだ認証回りだけ作成してますが、今後は気象データなどを取り込んで釣りアプリとして作成していく予定です。",
-      URL: "",
-      github: "https://github.com/takushisato/ai-talk-app",
-    },
-    {
-      id: 3,
-      title: "釣り人向け 潮見表サイト",
-      skill: "Nuxt2、TailwindCSS 他",
-      description:
-        "海上保安庁が公開しているAPIを利用して、潮の満ち引きをグラフで検索できる様にしたサービスを個人開発しました。",
-      URL: "https://sio-michihiki.com/",
-      github: "https://github.com/takushisato/michihiki-nuxt",
-    },
-    {
-      id: 4,
-      title: "ゲーム開発",
-      skill: "RPGツクールMZ",
-      description:
-        "脱出系ゲーム「青鬼」を模したゲームを個人開発で制作しました。\n\n もしも、ローカルにプルして動かすという場合は音量に注意して下さい。",
-      URL: "",
-      github: "https://github.com/takushisato/futakobusan",
-    },
-  ];
-
   // workExperienceIDをuseStateで管理
   const [workExperienceID, setWorkExperienceID] = useState<number | null>(null);
 

@@ -38,9 +38,10 @@ function PersonalDevComponent() {
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg">詳細情報</h3>
+          <div className="border-bottom-gray"></div>
           {workExperienceID !== null && (
             <>
-              <p className="py-4 text-left">
+              <p className="py-4 text-left border-bottom-gray">
                 {personalDevList[workExperienceID - 1].description
                   .split("\n")
                   .map((line, index) => (
@@ -51,8 +52,8 @@ function PersonalDevComponent() {
                   ))}
               </p>
               <br />
-              <div className="text-left">
-                <p className="mb-4 md:mb-0">
+              <div className="text-left border-bottom-gray">
+                <p className="">
                   <a
                     href={personalDevList[workExperienceID - 1].github}
                     target="_blank"
@@ -65,7 +66,7 @@ function PersonalDevComponent() {
                 </p>
                 <br />
                 {personalDevList[workExperienceID - 1].URL && (
-                  <p>
+                  <p className="mb-8">
                     <a
                       href={personalDevList[workExperienceID - 1].URL}
                       target="_blank"

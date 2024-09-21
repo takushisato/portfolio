@@ -11,12 +11,12 @@ export const myHistoryList = [
   },
   {
     id: 3,
-    date: "2004年1月",
+    date: "2005年1月",
     content: "トステム株式会社を退社",
   },
   {
     id: 4,
-    date: "2004年2月",
+    date: "2005年2月",
     content: "中小の金属加工会社に入社",
   },
   {
@@ -27,7 +27,8 @@ export const myHistoryList = [
   {
     id: 6,
     date: "2019年10月",
-    content: "同社を退社。また、個人でも仕事をするため屋号を取得",
+    content:
+      "2005年に入社した会社を退社。また、個人でも仕事をするため屋号を取得",
   },
   {
     id: 7,

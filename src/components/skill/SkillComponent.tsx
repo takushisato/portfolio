@@ -12,7 +12,7 @@ function SkillComponent() {
           </thead>
           <tbody>
             <tr>
-              <td>フロントエンド</td>
+              <td>フロント</td>
               <td>HTML、CSS</td>
             </tr>
             <tr>

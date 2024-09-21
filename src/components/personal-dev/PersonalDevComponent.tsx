@@ -7,7 +7,7 @@ function PersonalDevComponent() {
       title: "ポートフォリオ",
       skill: "React、daisy.UI 他",
       description:
-        "当ポートフォリオです。Reactを使用して作成しました。また、daisy.UIというUIフレームワークを使用してデザインを整えました。",
+        "当ポートフォリオです。\n\n Reactを使用して作成しました。\n\n また、daisy.UIというUIフレームワークを使用してデザインを整えました。",
       URL: "https://takushisato.github.io/portfolio/",
       github: "https://github.com/takushisato/portfolio",
     },
@@ -16,7 +16,7 @@ function PersonalDevComponent() {
       title: "AIを使用した釣りアプリ",
       skill: "Django、Nuxt3、Vuetify3 他",
       description:
-        "openAIのAPIを用いた釣りアプリを個人開発中です。2024年8月現在まだ認証回りだけ作成してますが、今後は気象データなどを取り込んで釣りアプリとして作成していく予定です。",
+        "openAIのAPIを用いた釣りアプリを個人開発中です。\n\n 2024年8月現在まだ認証回りだけ作成してますが、今後は気象データなどを取り込んで釣りアプリとして作成していく予定です。",
       URL: "",
       github: "https://github.com/takushisato/ai-talk-app",
     },
@@ -34,7 +34,7 @@ function PersonalDevComponent() {
       title: "ゲーム開発",
       skill: "RPGツクールMZ",
       description:
-        "脱出系ゲーム「青鬼」を模したゲームを個人開発で制作しました。もしも、ローカルにプルして動かすという場合は音量に注意して下さい。",
+        "脱出系ゲーム「青鬼」を模したゲームを個人開発で制作しました。\n\n もしも、ローカルにプルして動かすという場合は音量に注意して下さい。",
       URL: "",
       github: "https://github.com/takushisato/futakobusan",
     },
@@ -78,30 +78,44 @@ function PersonalDevComponent() {
           <h3 className="font-bold text-lg">詳細情報</h3>
           {workExperienceID !== null && (
             <>
-              <p className="py-4">
-                {personalDevList[workExperienceID - 1].description}
+              <p className="py-4 text-left">
+                {personalDevList[workExperienceID - 1].description
+                  .split("\n")
+                  .map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
               </p>
               <br />
-              <p>
-                <a
-                  href={personalDevList[workExperienceID - 1].github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:opacity-50"
-                >
-                  GitHub
-                </a>
-              </p>
-              <br />
-              {personalDevList[workExperienceID - 1].URL && (
-                <a
-                  href={personalDevList[workExperienceID - 1].URL}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="btn btn-secondary">公開URL</button>
-                </a>
-              )}
+              <div className="text-left">
+                <p className="mb-4 md:mb-0">
+                  <a
+                    href={personalDevList[workExperienceID - 1].github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn btn-accent min-w-40">
+                      GitHubはこちら
+                    </button>
+                  </a>
+                </p>
+                <br />
+                {personalDevList[workExperienceID - 1].URL && (
+                  <p>
+                    <a
+                      href={personalDevList[workExperienceID - 1].URL}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button className="btn btn-secondary min-w-40">
+                        公開URLはこちら
+                      </button>
+                    </a>
+                  </p>
+                )}
+              </div>
             </>
           )}
           <div className="modal-action">

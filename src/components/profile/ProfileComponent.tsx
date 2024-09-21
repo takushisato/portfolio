@@ -63,9 +63,11 @@ function ProfileComponent() {
       <div className="text-left inline-block">
         <h3 className="text-xl">趣味など・・・</h3>
         <p>釣り・・・オフショアジギング、ライトヒラメ、カレイ等の船釣り全般</p>
+        <br />
         <p>
           ゲーム・・・ゲーミングPC、PS5、ニンテンドースイッチ所有してます。ジャンルはエーペックスなどのFPS、モンハンなどのPvE、パーティゲームなど様々やります。
         </p>
+        <br />
         <p>いずれも開発の合間に没頭しています✌</p>
       </div>
     </div>

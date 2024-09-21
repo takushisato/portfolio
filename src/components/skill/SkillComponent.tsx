@@ -2,24 +2,56 @@ function SkillComponent() {
   return (
     <div className="my-16 max-w-screen-md mx-auto" id="skill">
       <h2 className="text-2xl text-center">スキル</h2>
-      <p className="text-center">言語、フレームワーク、ツール等</p>
-      <p className="text-center">経験のあるものを記載しております</p>
-      <ul>
-        <li className="my-2">HTML、CSS</li>
-        <li className="my-2">CSS Framework（Tailwind）</li>
-        <li className="my-2">Python（Django、Anaconda）</li>
-        <li className="my-2">PHP（Laravel、WordPress）</li>
-        <li className="my-2">
-          UI Framework（Bootstrap4、Bootstrap5、daisy.UI、Vuetify3）
-        </li>
-        <li className="my-2">JavaScript（jQuery、Vue.js、Nuxt.js）</li>
-        <li className="my-2">TypeScript</li>
-        <li className="my-2">Docker</li>
-        <li className="my-2">Git</li>
-        <li className="my-2">Linux（Ubuntu）</li>
-        <li className="my-2">SQL（MySQL、SQLite3）</li>
-        <li className="my-2">AWS、Netlify、Render</li>
-      </ul>
+      <div className="overflow-x-auto">
+        <table className="table table-zebra">
+          <thead>
+            <tr>
+              <th>分野</th>
+              <th>言語、フレームワーク、ツール等</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>フロントエンド</td>
+              <td>HTML、CSS</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CSS Framework（Tailwind）</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                UI Framework（Bootstrap4、Bootstrap5、daisy.UI、Vuetify3）
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>TypeScript、JavaScript（jQuery、Vue.js、Nuxt.js）</td>
+            </tr>
+            <tr>
+              <td>バックエンド</td>
+              <td>Python（Django、Anaconda）</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>PHP（Laravel、WordPress）</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>DB（MySQL、SQLite3、PostgreSQL）</td>
+            </tr>
+            <tr>
+              <td>インフラ・ツール等</td>
+              <td>Docker、Git、AWS、Netlify、Render</td>
+            </tr>
+            <tr>
+              <td>OS</td>
+              <td>mac、Windows、Linux（Ubuntu）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

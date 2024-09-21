@@ -14,3 +14,7 @@ h3 {
 .icon-aria {
   max-width: 280px;
 }
+
+.border-bottom-gray {
+  border-bottom: 1px solid #e0e0e0;
+}

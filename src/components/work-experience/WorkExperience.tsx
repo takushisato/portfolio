@@ -31,22 +31,62 @@ function WorkExperienceComponent() {
             <h3>{item.title}</h3>
             <br />
             <p className="font-bold">使用技術</p>
-            <p>{item.skill}</p>
+            <p>{item.sub_title}</p>
             <p className="font-bold">就業期間</p>
             <p>{item.timeFrame}</p>
-            {/* <p className="font-bold">詳細</p>
-            <p>{item.description}</p> */}
           </div>
         ))}
       </div>
       <dialog id="my_modal_2" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">詳細情報</h3>
           {workExperienceID !== null && (
-            <p className="py-4">
-              {workExperienceList[workExperienceID - 1].description}
-            </p>
+            <h2 className="text-lg">
+              {workExperienceList[workExperienceID - 1].title}
+            </h2>
           )}
+          <br />
+          <div className="flex border-bottom-gray">
+            <p className="font-bold">参加時期：</p>
+            {workExperienceID !== null && (
+              <p className="ml-2">
+                {workExperienceList[workExperienceID - 1].timeFrame}
+              </p>
+            )}
+          </div>
+          <br />
+          <div className="flex border-bottom-gray">
+            <p className="font-bold">ポジション：</p>
+            {workExperienceID !== null && (
+              <p className="ml-2">
+                {workExperienceList[workExperienceID - 1].position}
+              </p>
+            )}
+          </div>
+          <br />
+          <div className="flex border-bottom-gray">
+            <p className="font-bold">参画人数：</p>
+            {workExperienceID !== null && (
+              <p className="ml-2">
+                {workExperienceList[workExperienceID - 1].member_count}
+              </p>
+            )}
+          </div>
+          <br />
+          <div className="text-left border-bottom-gray">
+            <p className="font-bold">詳細説明：</p>
+            {workExperienceID !== null && (
+              <p className="ml-2">
+                {workExperienceList[workExperienceID - 1].detail
+                  .split("\n")
+                  .map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+              </p>
+            )}
+          </div>
           <div className="modal-action">
             <form method="dialog">
               <button className="btn">Close</button>

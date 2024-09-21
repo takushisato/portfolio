@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function PersonalDevComponent() {
   const personalDevList = [
     {
@@ -39,7 +40,7 @@ function PersonalDevComponent() {
     },
   ];
 
-  // historyIDをuseStateで管理
+  // workExperienceIDをuseStateで管理
   const [workExperienceID, setWorkExperienceID] = useState<number | null>(null);
 
   // 行をクリックしたときにモーダルを表示
@@ -66,37 +67,42 @@ function PersonalDevComponent() {
           >
             <h3>{item.title}</h3>
             <br />
-            {/* <p className="font-bold">リポジトリ</p>
-            <p>
-              <a
-                href={item.github}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:opacity-50"
-              >
-                GitHub
-              </a>
-            </p> */}
             <p className="font-bold">使用技術</p>
             <p>{item.skill}</p>
-            {/* <p className="font-bold">詳細</p>
-            <p>{item.description}</p>
-            <br />
-            {item.URL && (
-              <a href={item.URL} target="_blank" rel="noreferrer">
-                <button className="btn btn-secondary">公開URL</button>
-              </a>
-            )} */}
           </div>
         ))}
       </div>
+
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg">詳細情報</h3>
           {workExperienceID !== null && (
-            <p className="py-4">
-              {personalDevList[workExperienceID - 1].description}
-            </p>
+            <>
+              <p className="py-4">
+                {personalDevList[workExperienceID - 1].description}
+              </p>
+              <br />
+              <p>
+                <a
+                  href={personalDevList[workExperienceID - 1].github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:opacity-50"
+                >
+                  GitHub
+                </a>
+              </p>
+              <br />
+              {personalDevList[workExperienceID - 1].URL && (
+                <a
+                  href={personalDevList[workExperienceID - 1].URL}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn btn-secondary">公開URL</button>
+                </a>
+              )}
+            </>
           )}
           <div className="modal-action">
             <form method="dialog">

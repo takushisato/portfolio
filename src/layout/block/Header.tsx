@@ -1,4 +1,12 @@
 const Header = () => {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // smooth scroll
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <header>
       <div className="navbar bg-gray-100 border-b-2 border-gray-200">
@@ -29,22 +37,32 @@ const Header = () => {
               </label>
               <ul className="dropdown-content z-[1] menu p-2 shadow bg-gray-300 rounded-box w-52">
                 <li className="font-bold my-2">
-                  <a href="#profile">自己紹介</a>
+                  <button onClick={() => handleScroll("profile")}>
+                    自己紹介
+                  </button>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="#myHistory">経歴</a>
+                  <button onClick={() => handleScroll("myHistory")}>
+                    経歴
+                  </button>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="#skill">スキル</a>
+                  <button onClick={() => handleScroll("skill")}>スキル</button>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="#workExperience">実務経歴</a>
+                  <button onClick={() => handleScroll("workExperience")}>
+                    実務経歴
+                  </button>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="#personalDev">個人開発</a>
+                  <button onClick={() => handleScroll("personalDev")}>
+                    個人開発
+                  </button>
                 </li>
                 <li className="font-bold my-2">
-                  <a href="#siteHistory">更新情報</a>
+                  <button onClick={() => handleScroll("siteHistory")}>
+                    更新情報
+                  </button>
                 </li>
               </ul>
             </div>

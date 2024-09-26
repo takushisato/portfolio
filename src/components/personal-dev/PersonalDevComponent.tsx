@@ -27,7 +27,7 @@ function PersonalDevComponent() {
             className="w-full md:w-1/3 lg:w-1/5 bg-slate-300 p-4 rounded-md m-4 cursor-pointer hover:opacity-80"
             onClick={() => handleRowClick(item.id)}
           >
-            <h3>{item.title}</h3>
+            <h3 className="font-bold">{item.title}</h3>
             <br />
             <p className="font-bold">使用技術</p>
             <p>{item.skill}</p>

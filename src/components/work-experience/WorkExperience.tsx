@@ -28,7 +28,7 @@ function WorkExperienceComponent() {
             className="w-full md:w-1/3 lg:w-1/5 bg-slate-300 p-4 rounded-md m-4 cursor-pointer hover:opacity-80"
             onClick={() => handleRowClick(item.id)}
           >
-            <h3>{item.title}</h3>
+            <h3 className="font-bold">{item.title}</h3>
             <br />
             <p className="font-bold">使用技術</p>
             <p>{item.sub_title}</p>
@@ -40,13 +40,13 @@ function WorkExperienceComponent() {
       <dialog id="my_modal_2" className="modal">
         <div className="modal-box">
           {workExperienceID !== null && (
-            <h2 className="text-lg">
+            <h2 className="text-lg font-bold">
               {workExperienceList[workExperienceID - 1].title}
             </h2>
           )}
           <br />
           <div className="flex border-bottom-gray">
-            <p className="font-bold">参加時期：</p>
+            <p className="font-bold">参画時期：</p>
             {workExperienceID !== null && (
               <p className="ml-2">
                 {workExperienceList[workExperienceID - 1].timeFrame}
@@ -64,7 +64,7 @@ function WorkExperienceComponent() {
           </div>
           <br />
           <div className="flex border-bottom-gray">
-            <p className="font-bold">参画人数：</p>
+            <p className="font-bold">プロジェクト人数：</p>
             {workExperienceID !== null && (
               <p className="ml-2">
                 {workExperienceList[workExperienceID - 1].member_count}

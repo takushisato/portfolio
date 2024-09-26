@@ -37,7 +37,7 @@ function ProfileComponent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={github} alt="github icon" className="hover:opacity-50" />
+          <img src={github} alt="github icon" className="hover:opacity-70" />
         </a>
         <a
           href="https://x.com/4CKwk9kTXBo3Cuz"
@@ -45,7 +45,7 @@ function ProfileComponent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={twitter} alt="twitter icon" className="hover:opacity-50" />
+          <img src={twitter} alt="twitter icon" className="hover:opacity-70" />
         </a>
         <a
           href="https://www.facebook.com/taku820801/"
@@ -56,7 +56,7 @@ function ProfileComponent() {
           <img
             src={facebook}
             alt="facebook icon"
-            className="hover:opacity-50"
+            className="hover:opacity-70"
           />
         </a>
       </div>

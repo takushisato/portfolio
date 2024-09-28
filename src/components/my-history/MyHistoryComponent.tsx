@@ -23,8 +23,16 @@ function MyHistoryComponent() {
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box" key={history.id}>
-                {history.content}
+              <div
+                className="timeline-end timeline-box text-left"
+                key={history.id}
+              >
+                {history.content.split("\n").map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
               </div>
               <hr />
             </li>

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const Header = () => {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
@@ -6,6 +8,13 @@ const Header = () => {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
+  // ページ読み込み時にページトップに戻す
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100); // ページが完全にロードされてから位置をリセットさせるため、100msの遅延を追加
+  }, []);
 
   return (
     <header>

@@ -40,7 +40,7 @@ function ProfileComponent() {
           <img src={github} alt="github icon" className="hover:opacity-70" />
         </a>
         <a
-          href="https://x.com/4CKwk9kTXBo3Cuz"
+          href="https://x.com/taku820801"
           className="w-12 mx-auto"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,5 +1,14 @@
 # React + TypeScript + Vite で作成したポートフォリオ
 
+## 公開 URL
+
+```
+# github.io
+https://takushisato.github.io/portfolio/
+```
+
+## よく使うコマンド
+
 ```
 # 環境インストール
 npm install

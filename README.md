@@ -1,7 +1,7 @@
 # React + TypeScript + Vite で作成したポートフォリオ
 
 ```
-# 環境構築
+# 環境インストール
 npm install
 
 # ローカルサーバー起動
@@ -9,6 +9,9 @@ npm run dev
 
 # ビルド
 npm run build
+
+# github.io にデプロイ
+npm run deploy
 ```
 
 ## バージョン情報

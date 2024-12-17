@@ -9,7 +9,7 @@ export const workExperienceList = [
     position: "フロントエンドエンジニア（SE）",
     detail:
       "ある自治体の図書館管理システムです。\n\n かなりの短納期案件で、とてもとてもバタバタしながら現在就業しております。\n\n 主にフロントエンドの実装を担当。\n\n バックエンドはLaravelのスクラッチと、Railsで作られた「Enju」という図書館システムのオープンソースを組み合わせたものを使用しています。",
-    member_count: "50人〜",
+    member_count: "20人",
   },
   {
     id: 2,
@@ -39,8 +39,7 @@ export const workExperienceList = [
     id: 4,
     title: "C向け辞書アプリ",
     sub_title: "Django、Nuxt3、Vuetify3 他",
-    skill:
-      "FE（Nuxt3、Vuetify3、TypeScript）BE（Django、MySQL）インフラ（docker、AWS）GitHub、discord",
+    skill: "FE（Nuxt3、Vuetify3、TypeScript）BE（Django、MySQL）インフラ（docker、AWS）GitHub、discord",
     timeFrame: "2023年4月〜2024年5月",
     position: "エンジニア（SE）FEおよびBEも実装",
     detail:

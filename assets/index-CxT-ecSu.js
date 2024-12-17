@@ -87,7 +87,7 @@ Error generating stack: `+i.message+`
 
  主にフロントエンドの実装を担当。
 
- バックエンドはLaravelのスクラッチと、Railsで作られた「Enju」という図書館システムのオープンソースを組み合わせたものを使用しています。`,member_count:"50人〜"},{id:2,title:"塗料メーカーの業務システム",sub_title:"Django、Nuxt3、Vuetify3 他",skill:"FE（Nuxt3、Vuetify3、TypeScript、pinia、SpreadJS）BE（Django、PostgreSQL）インフラ（docker、AWS）GitHub、slack",timeFrame:"2023年11月〜2024年8月",position:"フロントエンドエンジニア（SE）",detail:`大手塗料メーカーの業務システムです。
+ バックエンドはLaravelのスクラッチと、Railsで作られた「Enju」という図書館システムのオープンソースを組み合わせたものを使用しています。`,member_count:"20人"},{id:2,title:"塗料メーカーの業務システム",sub_title:"Django、Nuxt3、Vuetify3 他",skill:"FE（Nuxt3、Vuetify3、TypeScript、pinia、SpreadJS）BE（Django、PostgreSQL）インフラ（docker、AWS）GitHub、slack",timeFrame:"2023年11月〜2024年8月",position:"フロントエンドエンジニア（SE）",detail:`大手塗料メーカーの業務システムです。
 
  実験結果をエクセルで共有しているものを、システム化して社内で共有するためのシステムを開発しました。
 

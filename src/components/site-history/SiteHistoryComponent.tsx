@@ -7,20 +7,24 @@ function SiteHistoryComponent() {
           <tbody>
             <tr>
               <td>
-                <span className="font-bold">2024/9/30</span>{" "}
-                <span className="mx-8"></span>スムーススクロールを追加しました。
+                <span className="font-bold">2025/5/30</span> <span className="mx-8"></span>業務内容を更新しました。
               </td>
             </tr>
             <tr>
               <td>
-                <span className="font-bold">2024/9/15</span>{" "}
-                <span className="mx-8"></span> 経歴、個人開発を修正しました。
+                <span className="font-bold">2024/9/30</span> <span className="mx-8"></span>
+                スムーススクロールを追加しました。
               </td>
             </tr>
             <tr>
               <td>
-                <span className="font-bold">2024/9/01</span>{" "}
-                <span className="mx-8"></span> 新規公開しました。
+                <span className="font-bold">2024/9/15</span> <span className="mx-8"></span>{" "}
+                経歴、個人開発を修正しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span className="font-bold">2024/9/01</span> <span className="mx-8"></span> 新規公開しました。
               </td>
             </tr>
           </tbody>

@@ -1,29 +1,40 @@
 export const workExperienceList = [
   {
     id: 1,
-    title: "X（旧ツイッター）の自動化システム",
-    sub_title: "React、Flask 他",
-    skill: "React、Flask、Python、Selenium、websocket、MySQL、GitHub、slackなど",
-    timeFrame: "2024年12月〜",
-    position: "SE",
+    title: "大手食品加工会社の生産計画自動化システム",
+    sub_title: "React、Django 他",
+    skill: "React、Django、Python、Celery、pandas、Redux、PostgreSQL、GitHub、Notionなど",
+    timeFrame: "2025年5月〜",
+    position: "ITアーキテクト",
     detail:
-      "X（旧ツイッター）の自動いいね、予約投稿、自動DM送信などを行うシステム。X社のAPIを使用せずSeleniumを使用して実装。",
-    member_count: "5人",
+      "既存の生産管理システムと合わせ、食品加工機の生産計画の自動システムを構築。職人技となっていた生産計画業務の属人化を解消すべく奮闘中",
+    member_count: "3人",
   },
   {
     id: 2,
+    title: "X（旧ツイッター）の自動化システム",
+    sub_title: "React、Flask 他",
+    skill: "React、Flask、Python、Selenium、websocket、MySQL、GitHub、slackなど",
+    timeFrame: "2024年12月〜2025年3月",
+    position: "SE",
+    detail:
+      "X（旧ツイッター）の自動いいね、予約投稿、自動DM送信などを行うシステム。X社のAPIを使用せずSeleniumを使用して実装しました。",
+    member_count: "5人",
+  },
+  {
+    id: 3,
     title: "図書館の管理システム",
     sub_title: "Nuxt3、Vuetify3 他",
     skill:
       "FE（Nuxt3、Vuetify3、TypeScript）BE（Laravel、RubyOnRails、PostgreSQL）インフラ（docker、GCP）GitHub、slack",
-    timeFrame: "2024年9月〜",
+    timeFrame: "2024年9月〜2024年11月",
     position: "フロントエンドエンジニア（SE）",
     detail:
       "ある自治体の図書館管理システムです。\n\n かなりの短納期案件で、とてもとてもバタバタしながら現在就業しております。\n\n 主にフロントエンドの実装を担当。\n\n バックエンドはLaravelのスクラッチと、Railsで作られた「Enju」という図書館システムのオープンソースを組み合わせたものを使用しています。",
     member_count: "20人",
   },
   {
-    id: 3,
+    id: 4,
     title: "塗料メーカーの業務システム",
     sub_title: "Django、Nuxt3、Vuetify3 他",
     skill:
@@ -35,7 +46,7 @@ export const workExperienceList = [
     member_count: "12人",
   },
   {
-    id: 4,
+    id: 5,
     title: "高校の部活動支援システム",
     sub_title: "Django、daisy.UI 他",
     skill:
@@ -47,7 +58,7 @@ export const workExperienceList = [
     member_count: "3人",
   },
   {
-    id: 5,
+    id: 6,
     title: "C向け辞書アプリ",
     sub_title: "Django、Nuxt3、Vuetify3 他",
     skill: "FE（Nuxt3、Vuetify3、TypeScript）BE（Django、MySQL）インフラ（docker、AWS）GitHub、discord",
@@ -56,16 +67,6 @@ export const workExperienceList = [
     detail:
       "openAIのAPIを用いた辞書アプリ。\n\n ChatGPTライクなAIサービスを開発しました。\n\n 主にバックエンド、フロントエンドの実装を担当。\n\n 当時はDjangoとOpenAIのAPIを使用したサンプルなどが無く、かなり手探りで行いましたが、無事に開発できました。",
     member_count: "3人",
-  },
-  {
-    id: 6,
-    title: "",
-    sub_title: "",
-    skill: "",
-    timeFrame: "",
-    position: "",
-    detail: "",
-    member_count: "",
   },
   {
     id: 7,

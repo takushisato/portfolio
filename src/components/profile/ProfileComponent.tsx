@@ -27,24 +27,14 @@ function ProfileComponent() {
         </div>
       </div>
 
-      <p>宮城県北部在住の「たくちゃん」と申します。</p>
+      <p>宮城県北部在住の佐藤拓史と申します。</p>
       <p>普段は個人でWeb系のお仕事を請け負っています。</p>
-      <p> 主にPython（Django）、VueやNuxtが多いです。</p>
+      <p> backendはPython（Django）、frontendはVueやNuxt、Reactが多いです。</p>
       <div className="flex my-12 icon-aria  mx-auto">
-        <a
-          href="https://github.com/takushisato"
-          className="w-12 mx-auto"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/takushisato" className="w-12 mx-auto" target="_blank" rel="noopener noreferrer">
           <img src={github} alt="github icon" className="hover:opacity-70" />
         </a>
-        <a
-          href="https://x.com/taku820801"
-          className="w-12 mx-auto"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://x.com/taku820801" className="w-12 mx-auto" target="_blank" rel="noopener noreferrer">
           <img src={twitter} alt="twitter icon" className="hover:opacity-70" />
         </a>
         <a
@@ -53,11 +43,7 @@ function ProfileComponent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src={facebook}
-            alt="facebook icon"
-            className="hover:opacity-70"
-          />
+          <img src={facebook} alt="facebook icon" className="hover:opacity-70" />
         </a>
       </div>
       <div className="text-left inline-block">

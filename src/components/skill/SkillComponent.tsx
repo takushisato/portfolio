@@ -21,17 +21,15 @@ function SkillComponent() {
             </tr>
             <tr>
               <td></td>
-              <td>
-                UI Framework（Bootstrap4、Bootstrap5、daisy.UI、Vuetify3）
-              </td>
+              <td>UI Framework（Bootstrap4、Bootstrap5、daisy.UI、Vuetify3）</td>
             </tr>
             <tr>
               <td></td>
-              <td>TypeScript、JavaScript（jQuery、Vue.js、Nuxt.js）</td>
+              <td>TypeScript、JavaScript（jQuery、Vue.js、Nuxt.js、React）</td>
             </tr>
             <tr>
               <td>バックエンド</td>
-              <td>Python（Django、Anaconda）</td>
+              <td>Python（Django、Anaconda、Flask）</td>
             </tr>
             <tr>
               <td></td>

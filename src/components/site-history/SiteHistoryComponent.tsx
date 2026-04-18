@@ -7,6 +7,11 @@ function SiteHistoryComponent() {
           <tbody>
             <tr>
               <td>
+                <span className="font-bold">2026/4/18</span> <span className="mx-8"></span>個人開発を更新しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
                 <span className="font-bold">2025/11/09</span> <span className="mx-8"></span>タイトル回りを更新しました。
               </td>
             </tr>

@@ -10,6 +10,14 @@ export const personalDevList = [
   },
   {
     id: 2,
+    title: "AIを使用した献立提案アプリ",
+    skill: "Django、React、Stripe 他",
+    description:
+      "ローカルLLMを用いた献立提案アプリを個人開発しました。\n\n ユーザーが冷蔵庫の中にある食材を入力すると、AIがそれらの食材を使用した献立を提案してくれるアプリです。\n\n 食事内容の相談をすることも可能で、ユーザーの健康状態やダイエットの目標などを考慮して、最適な献立を提案してくれます。",
+    URL: "https://ai-gohan.top/",
+  },
+  {
+    id: 3,
     title: "AIを使用した釣りアプリ",
     skill: "Django、Nuxt3、Vuetify3 他",
     description:
@@ -18,7 +26,7 @@ export const personalDevList = [
     github: "https://github.com/takushisato/ai-talk-app",
   },
   {
-    id: 3,
+    id: 4,
     title: "釣り人向け 潮見表サイト",
     skill: "Nuxt2、TailwindCSS 他",
     description:
@@ -27,12 +35,30 @@ export const personalDevList = [
     github: "https://github.com/takushisato/michihiki-nuxt",
   },
   {
-    id: 4,
+    id: 5,
     title: "ゲーム開発",
     skill: "RPGツクールMZ",
     description:
       "脱出系ゲーム「青鬼」を模したゲームを個人開発で制作しました。\n\n  2023年までサーバーに載せていたのですが、サーバー代も馬鹿にならなくなってきたので解約しました。\n\n  現状は適当なHTMLファイルに読み込ませれば動かす事は可能です。\n\n （もしも、ローカルにプルして動かすという場合は音量に注意して下さい）",
     URL: "",
     github: "https://github.com/takushisato/futakobusan",
+  },
+  {
+    id: 6,
+    title: "no title",
+    skill: "no title",
+    description: "no title",
+  },
+  {
+    id: 7,
+    title: "no title",
+    skill: "no title",
+    description: "no title",
+  },
+  {
+    id: 8,
+    title: "no title",
+    skill: "no title",
+    description: "no title",
   },
 ];
